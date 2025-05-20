@@ -1,0 +1,191 @@
+
+@import 'variables';
+
+.contact-section {
+  .contact-description {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto $spacing-xl;
+    
+    .light-theme & {
+      color: rgba($light-text, 0.9);
+    }
+    
+    .dark-theme & {
+      color: rgba($dark-text, 0.9);
+    }
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: $font-size-xl;
+    margin-bottom: $spacing-md;
+    
+    .dark-theme & {
+      color: lighten($primary-color, 10%);
+    }
+  }
+  
+  .contact-content {
+    display: flex;
+    gap: $spacing-xl;
+    
+    .contact-form-container {
+      flex: 2;
+      
+      .contact-form {
+        .form-group {
+          margin-bottom: $spacing-md;
+          
+          label {
+            display: block;
+            margin-bottom: $spacing-sm;
+            font-weight: 500;
+          }
+          
+          input, textarea {
+            width: 100%;
+            padding: $spacing-md;
+            border-radius: $border-radius-md;
+            border: 1px solid;
+            font-family: $font-family-body;
+            
+            .light-theme & {
+              background-color: white;
+              border-color: $light-border;
+              color: $light-text;
+            }
+            
+            .dark-theme & {
+              background-color: $dark-card-bg;
+              border-color: $dark-border;
+              color: $dark-text;
+            }
+            
+            &:focus {
+              outline: none;
+              border-color: $primary-color;
+              box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+            }
+            
+            &.error {
+              border-color: $secondary-color;
+            }
+          }
+          
+          .error-message {
+            color: $secondary-color;
+            font-size: $font-size-sm;
+            margin-top: $spacing-xs;
+            display: block;
+          }
+        }
+        
+        .submit-button {
+          padding: $spacing-md $spacing-xl;
+          background-color: $primary-color;
+          color: white;
+          font-weight: 600;
+          border: none;
+          border-radius: $border-radius-md;
+          transition: $transition-normal;
+          
+          &:hover {
+            background-color: darken($primary-color, 10%);
+          }
+          
+          .dark-theme & {
+            background-color: lighten($primary-color, 10%);
+            
+            &:hover {
+              background-color: lighten($primary-color, 15%);
+            }
+          }
+        }
+        
+        .success-message {
+          margin-top: $spacing-md;
+          padding: $spacing-md;
+          color: green;
+          background-color: rgba(green, 0.1);
+          border-radius: $border-radius-md;
+          font-weight: 500;
+        }
+        
+        .form-error {
+          margin-top: $spacing-md;
+          padding: $spacing-md;
+          background-color: rgba($secondary-color, 0.1);
+          border-radius: $border-radius-md;
+          color: $secondary-color;
+          font-weight: 500;
+        }
+      }
+    }
+    
+    .contact-info {
+      flex: 1;
+      padding: $spacing-lg;
+      border-radius: $border-radius-lg;
+      
+      .light-theme & {
+        background-color: $light-card-bg;
+        border: 1px solid $light-border;
+      }
+      
+      .dark-theme & {
+        background-color: $dark-card-bg;
+        border: 1px solid $dark-border;
+      }
+      
+      .info-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: $spacing-lg;
+        
+        .info-icon {
+          font-size: $font-size-xl;
+          margin-right: $spacing-md;
+        }
+        
+        p {
+          .light-theme & {
+            color: rgba($light-text, 0.9);
+          }
+          
+          .dark-theme & {
+            color: rgba($dark-text, 0.9);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .contact-section {
+    .contact-content {
+      flex-direction: column;
+      
+      .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        .info-item {
+          margin-right: $spacing-md;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .contact-section {
+    .contact-content {
+      .contact-info {
+        flex-direction: column;
+      }
+    }
+  }
+}

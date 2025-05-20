@@ -1,0 +1,153 @@
+
+@import 'variables';
+
+// Global styles
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family-body;
+  line-height: 1.6;
+  font-size: $font-size-base;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: $transition-normal;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Theme styling
+.app {
+  transition: background-color $transition-normal, color $transition-normal;
+
+  &.light-theme {
+    background-color: $light-bg;
+    color: $light-text;
+  }
+
+  &.dark-theme {
+    background-color: $dark-bg;
+    color: $dark-text;
+  }
+}
+
+// Common section styles
+.section-title {
+  font-size: $font-size-3xl;
+  margin-bottom: $spacing-lg;
+  position: relative;
+  display: inline-block;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50%;
+    height: 3px;
+    background-color: $primary-color;
+  }
+}
+
+// Container styling
+[class$="-container"] {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-lg;
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// Common card styling
+.card {
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  transition: $transition-normal;
+  
+  .light-theme & {
+    background-color: $light-card-bg;
+    border: 1px solid $light-border;
+  }
+  
+  .dark-theme & {
+    background-color: $dark-card-bg;
+    border: 1px solid $dark-border;
+  }
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+main {
+  min-height: 100vh;
+  padding-top: 70px; // To account for the fixed navbar
+}
+
+section {
+  padding: $spacing-3xl 0;
+}
