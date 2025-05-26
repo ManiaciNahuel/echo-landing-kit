@@ -6,88 +6,88 @@ const Services = ({ language }) => {
   const [showMore, setShowMore] = useState(false);
 
   const serviceTexts = {
-    en: {
-      title: "Our Services",
-      subtitle: "What We Offer",
-      description: "We provide a wide range of services designed to meet your business needs and help you achieve your goals.",
-      viewMore: "View More",
-      viewLess: "View Less",
-      services: [
-        {
-          title: "Service 1",
-          description: "A comprehensive solution designed to optimize your business operations.",
-          icon: "📊"
-        },
-        {
-          title: "Service 2",
-          description: "Custom strategies tailored to your specific industry needs.",
-          icon: "🚀"
-        },
-        {
-          title: "Service 3",
-          description: "Innovative approaches to solve complex business challenges.",
-          icon: "💡"
-        },
-        {
-          title: "Service 4",
-          description: "Expert consultation to guide your business decisions.",
-          icon: "👨‍💼"
-        },
-        {
-          title: "Service 5",
-          description: "Advanced tools to improve efficiency and productivity.",
-          icon: "🔧"
-        },
-        {
-          title: "Service 6",
-          description: "Ongoing support to ensure long-term success and growth.",
-          icon: "📈"
-        }
-      ]
-    },
-    es: {
-      title: "Nuestros Servicios",
-      subtitle: "Lo Que Ofrecemos",
-      description: "Proporcionamos una amplia gama de servicios diseñados para satisfacer las necesidades de tu negocio y ayudarte a alcanzar tus objetivos.",
-      viewMore: "Ver Más",
-      viewLess: "Ver Menos",
-      services: [
-        {
-          title: "Servicio 1",
-          description: "Una solución integral diseñada para optimizar las operaciones de tu negocio.",
-          icon: "📊"
-        },
-        {
-          title: "Servicio 2",
-          description: "Estrategias personalizadas adaptadas a las necesidades específicas de tu industria.",
-          icon: "🚀"
-        },
-        {
-          title: "Servicio 3",
-          description: "Enfoques innovadores para resolver desafíos empresariales complejos.",
-          icon: "💡"
-        },
-        {
-          title: "Servicio 4",
-          description: "Consultoría experta para guiar tus decisiones de negocio.",
-          icon: "👨‍💼"
-        },
-        {
-          title: "Servicio 5",
-          description: "Herramientas avanzadas para mejorar la eficiencia y productividad.",
-          icon: "🔧"
-        },
-        {
-          title: "Servicio 6",
-          description: "Soporte continuo para asegurar el éxito y crecimiento a largo plazo.",
-          icon: "📈"
-        }
-      ]
-    }
-  };
+  en: {
+    title: "Your Services", // Cambio de "Our Services" a "Your Services"
+    subtitle: "What You Offer", // Cambio de "What We Offer" a "What You Offer"
+    description: "Here, you can showcase the wide range of services designed to meet the unique needs of your business and help you achieve your goals.", // Ajuste de la descripción
+    viewMore: "View More",
+    viewLess: "View Less",
+    services: [
+      {
+        title: "[Service Title]", // Genérico
+        description: "Describe here one of the key solutions you provide, explaining its core benefit to your clients.", // Genérico
+        icon: "💡" // Puedes usar el icono que quieras, o dejarlo como placeholder
+      },
+      {
+        title: "[Service Title]", // Genérico
+        description: "Detail another one of your offerings, highlighting how it addresses a specific challenge or need.", // Genérico
+        icon: "📈"
+      },
+      {
+        title: "[Service Title]", // Genérico
+        description: "Present a third essential service, focusing on the unique value it brings to your target audience.", // Genérico
+        icon: "🛠️"
+      },
+      {
+        title: "[Service Title]", // Genérico
+        description: "Elaborate on a fourth service, emphasizing its impact on improving your clients' operations or results.", // Genérico
+        icon: "🌐"
+      },
+      {
+        title: "[Service Title]", // Genérico
+        description: "Outline a fifth service, illustrating how it contributes to the growth and success of those you serve.", // Genérico
+        icon: "🤝"
+      },
+      {
+        title: "[Service Title]", // Genérico
+        description: "Explain a sixth service, highlighting any specialized expertise or unique approach you bring.", // Genérico
+        icon: "🌟"
+      }
+    ]
+  },
+  es: {
+    title: "Tus Servicios", // Cambio de "Nuestros Servicios" a "Tus Servicios"
+    subtitle: "Lo Que Tú Ofreces", // Cambio de "Lo Que Ofrecemos" a "Lo Que Tú Ofreces"
+    description: "Aquí, puedes mostrar la amplia gama de servicios diseñados para satisfacer las necesidades únicas de tu negocio y ayudarte a alcanzar tus objetivos.", // Ajuste de la descripción
+    viewMore: "Ver Más",
+    viewLess: "Ver Menos",
+    services: [
+      {
+        title: "[Título de Servicio]", // Genérico
+        description: "Describe aquí una de las soluciones clave que proporcionas, explicando su beneficio principal para tus clientes.", // Genérico
+        icon: "💡"
+      },
+      {
+        title: "[Título de Servicio]", // Genérico
+        description: "Detalla otra de tus ofertas, resaltando cómo aborda un desafío o necesidad específica.", // Genérico
+        icon: "📈"
+      },
+      {
+        title: "[Título de Servicio]", // Genérico
+        description: "Presenta un tercer servicio esencial, centrándote en el valor único que aporta a tu público objetivo.", // Genérico
+        icon: "🛠️"
+      },
+      {
+        title: "[Título de Servicio]", // Genérico
+        description: "Desarrolla un cuarto servicio, enfatizando su impacto en la mejora de las operaciones o resultados de tus clientes.", // Genérico
+        icon: "🌐"
+      },
+      {
+        title: "[Título de Servicio]", // Genérico
+        description: "Esboza un quinto servicio, ilustrando cómo contribuye al crecimiento y éxito de aquellos a quienes sirves.", // Genérico
+        icon: "🤝"
+      },
+      {
+        title: "[Título de Servicio]", // Genérico
+        description: "Explica un sexto servicio, destacando cualquier experiencia especializada o enfoque único que aportes.", // Genérico
+        icon: "🌟"
+      }
+    ]
+  }
+};
 
   const texts = serviceTexts[language];
-  const visibleServices = showMore ? texts.services : texts.services.slice(0, 3);
+  const visibleServices = showMore ? texts.services : texts.services.slice(0, 6);
 
   return (
     <section id="services" className="services-section">
@@ -105,10 +105,6 @@ const Services = ({ language }) => {
             </div>
           ))}
         </div>
-        
-        <button className="view-toggle-button" onClick={() => setShowMore(!showMore)}>
-          {showMore ? texts.viewLess : texts.viewMore}
-        </button>
       </div>
     </section>
   );

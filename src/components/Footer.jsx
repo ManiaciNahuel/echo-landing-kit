@@ -7,6 +7,7 @@ const Footer = ({ language }) => {
 
   const footerTexts = {
     en: {
+      marca: "Brand",
       company: "Company Name",
       rights: "All Rights Reserved",
       navigation: "Navigation",
@@ -19,6 +20,7 @@ const Footer = ({ language }) => {
       terms: "Terms of Service"
     },
     es: {
+      marca: "Tu Marca",
       company: "Nombre de la Empresa",
       rights: "Todos los Derechos Reservados",
       navigation: "Navegación",
@@ -46,7 +48,7 @@ const Footer = ({ language }) => {
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-logo">
-            <div className="logo-placeholder">LOGO</div>
+            <div className="logo-placeholder">{texts.marca}</div>
             <p>{texts.company}</p>
           </div>
           

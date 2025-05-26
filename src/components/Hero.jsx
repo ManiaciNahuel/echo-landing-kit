@@ -5,13 +5,13 @@ import '../styles/Hero.scss';
 const Hero = ({ language }) => {
   const heroTexts = {
     en: {
-      title: "Innovative Solutions for Your Business",
-      subtitle: "Transform your ideas into reality with our expert services",
+      title: "Boost your online presence with a professional website",
+      subtitle: "Show the best of your brand, connect with your audience, and grow your opportunities.",
       cta: "Learn More"
     },
     es: {
-      title: "Soluciones Innovadoras para tu Negocio",
-      subtitle: "Transforma tus ideas en realidad con nuestros servicios expertos",
+      title: "Impulsá tu presencia digital con una web profesional",
+      subtitle: "Mostrá lo mejor de tu marca, conectá con tus clientes y generá más oportunidades.",
       cta: "Conocer Más"
     }
   };

@@ -7,28 +7,28 @@ const About = ({ language }) => {
     en: {
       title: "About Us",
       subtitle: "Who We Are",
-      paragraph1: "We are a dedicated team of professionals committed to providing exceptional solutions for our clients. With years of experience in the industry, we understand the unique challenges businesses face today.",
-      paragraph2: "Our mission is to help companies achieve their goals through innovative approaches and cutting-edge technology. We pride ourselves on our attention to detail and customer satisfaction.",
+      paragraph1: "Every business has a unique story and a clear vision. This section is the perfect space for you to share who you are, describing the essence, values, and passion that drive your brand.",
+      paragraph2: "Here you can detail what motivates you, your mission, and your goals, explaining how you turn your vision into reality. Furthermore, it's an opportunity to express why you exist, highlighting the problem you solve or the specific need you fulfill for your own clients.",
       values: "Our Values",
-      value1: "Excellence",
-      value2: "Innovation",
-      value3: "Integrity",
-      value1_desc: "We strive for excellence in everything we do.",
-      value2_desc: "We embrace new ideas and creative solutions.",
-      value3_desc: "We conduct business with honesty and transparency."
+      value1: "Our Value",
+      value2: "Our Value",
+      value3: "Our Value",
+      value1_desc: "Describe here a fundamental pillar that guides every decision and action in your business.",
+      value2_desc: "Express here an essential quality that sets your brand apart and defines your way of working.",
+      value3_desc: "Detail here the ethical principle or central philosophy that underpins all your operations."
     },
     es: {
       title: "Sobre Nosotros",
       subtitle: "Quiénes Somos",
-      paragraph1: "Somos un equipo dedicado de profesionales comprometidos con brindar soluciones excepcionales para nuestros clientes. Con años de experiencia en la industria, entendemos los desafíos únicos que enfrentan las empresas hoy en día.",
-      paragraph2: "Nuestra misión es ayudar a las empresas a alcanzar sus objetivos mediante enfoques innovadores y tecnología de vanguardia. Nos enorgullecemos de nuestra atención al detalle y la satisfacción del cliente.",
+      paragraph1: "Cada negocio tiene una historia única y una visión clara. Esta sección es el espacio perfecto para que compartas quién eres, describiendo la esencia, los valores y la pasión que impulsan tu marca.",
+      paragraph2: "Aquí podrás detallar qué te mueve, tu misión y tus objetivos, explicando cómo transformas tu visión en realidad. Además, es la oportunidad de expresar por qué existes, destacando el problema que resuelves o la necesidad específica que satisfaces para tus propios clientes.",
       values: "Nuestros Valores",
-      value1: "Excelencia",
-      value2: "Innovación",
-      value3: "Integridad",
-      value1_desc: "Nos esforzamos por la excelencia en todo lo que hacemos.",
-      value2_desc: "Adoptamos nuevas ideas y soluciones creativas.",
-      value3_desc: "Conducimos negocios con honestidad y transparencia."
+      value1: "Tu Valor",
+      value2: "Tu Valor",
+      value3: "Tu Valor",
+      value1_desc: "Describe aquí un pilar fundamental que guía cada decisión y acción en tu negocio.",
+      value2_desc: "Expresa aquí una cualidad esencial que diferencia tu marca y define tu forma de trabajar.",
+      value3_desc: "Detalla aquí el principio ético o la filosofía central que sustenta todas tus operaciones."
     }
   };
 

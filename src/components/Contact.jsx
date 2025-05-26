@@ -14,41 +14,41 @@ const Contact = ({ language }) => {
   const [submitStatus, setSubmitStatus] = useState(null);
 
   const contactTexts = {
-    en: {
-      title: "Contact Us",
-      subtitle: "Get In Touch",
-      description: "Have questions or need more information? Fill out the form below and we'll get back to you as soon as possible.",
-      name: "Full Name",
-      email: "Email Address",
-      subject: "Subject",
-      message: "Your Message",
-      submit: "Send Message",
-      required: "This field is required",
-      invalidEmail: "Please enter a valid email address",
-      success: "Your message has been sent successfully!",
-      error: "There was an error sending your message. Please try again.",
-      address: "123 Business Avenue, City",
-      phone: "+1 (234) 567-8901",
-      email_contact: "info@company.com"
-    },
-    es: {
-      title: "Contáctanos",
-      subtitle: "Ponte en Contacto",
-      description: "¿Tienes preguntas o necesitas más información? Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.",
-      name: "Nombre Completo",
-      email: "Correo Electrónico",
-      subject: "Asunto",
-      message: "Tu Mensaje",
-      submit: "Enviar Mensaje",
-      required: "Este campo es obligatorio",
-      invalidEmail: "Por favor ingresa un correo electrónico válido",
-      success: "¡Tu mensaje ha sido enviado con éxito!",
-      error: "Hubo un error al enviar tu mensaje. Por favor intenta de nuevo.",
-      address: "Avenida Empresarial 123, Ciudad",
-      phone: "+34 123 456 789",
-      email_contact: "info@empresa.com"
-    }
-  };
+  en: {
+    title: "Contact YOUR COMPANY", // Cambio a genérico para el título principal
+    subtitle: "Get In Touch With Your Business", // Énfasis en "Your Business"
+    description: "Here's where your customers can easily reach you. Whether they have questions, need more information, or want to discuss a project, this is their direct line to your team. Simply fill out the form below or use the contact details provided.", // Descripción re-enfocada
+    name: "Your Name", // Campo para que el cliente imagine el nombre de SU cliente
+    email: "Your Email Address", // Campo para el email de SU cliente
+    subject: "Subject of Your Inquiry", // Más genérico para el asunto de SU cliente
+    message: "Your Message Here", // El mensaje de SU cliente
+    submit: "Send Message",
+    required: "This field is required",
+    invalidEmail: "Please enter a valid email address",
+    success: "Your message has been sent successfully!", // Mensaje de éxito para el envío del formulario de SU cliente
+    error: "There was an error sending your message. Please try again.", // Mensaje de error para el envío del formulario de SU cliente
+    address: "123 Street, California", // Placeholder para la dirección del cliente
+    phone: "+19112030405", // Placeholder para el teléfono del cliente
+    email_contact: "emailadress@mail.com" // Placeholder para el email del cliente
+  },
+  es: {
+    title: "Contacta a TU MARCA", // Cambio a genérico para el título principal
+    subtitle: "Ponte en Contacto con Tu Negocio", // Énfasis en "Tu Negocio"
+    description: "Aquí es donde tus clientes pueden contactarte fácilmente. Ya sea que tengan preguntas, necesiten más información o quieran discutir un proyecto, esta es su línea directa con tu equipo. Simplemente completa el formulario o utiliza los datos de contacto proporcionados.", // Descripción re-enfocada
+    name: "Tu Nombre Completo", // Campo para que el cliente imagine el nombre de SU cliente
+    email: "Tu Correo Electrónico", // Campo para el email de SU cliente
+    subject: "Asunto de Tu Consulta", // Más genérico para el asunto de SU cliente
+    message: "Tu Mensaje Aquí", // El mensaje de SU cliente
+    submit: "Enviar Mensaje",
+    required: "Este campo es obligatorio",
+    invalidEmail: "Por favor ingresa un correo electrónico válido",
+    success: "¡Tu mensaje ha sido enviado con éxito!", // Mensaje de éxito para el envío del formulario de SU cliente
+    error: "Hubo un error al enviar tu mensaje. Por favor intenta de nuevo.", // Mensaje de error para el envío del formulario de SU cliente
+    address: "Calle Numero 1234", // Placeholder para la dirección del cliente
+    phone: "+549112030405", // Placeholder para el teléfono del cliente
+    email_contact: "correoelectronico@mail.com" // Placeholder para el email del cliente
+  }
+};
 
   const texts = contactTexts[language];
 

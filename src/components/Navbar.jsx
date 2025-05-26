@@ -57,7 +57,7 @@ const Navbar = ({ toggleTheme, isDarkMode, language, setLanguage }) => {
     <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <div className="logo" onClick={() => scrollToSection('home')}>
-          <span>LOGO</span>
+          <span>TU MARCA</span>
         </div>
         
         <div className="nav-right">
