@@ -16,8 +16,8 @@ const Contact = ({ language }) => {
   const contactTexts = {
   en: {
     title: "Contact YOUR COMPANY", // Cambio a genérico para el título principal
-    subtitle: "Get In Touch With Your Business", // Énfasis en "Your Business"
-    description: "Here's where your customers can easily reach you. Whether they have questions, need more information, or want to discuss a project, this is their direct line to your team. Simply fill out the form below or use the contact details provided.", // Descripción re-enfocada
+    subtitle: "Get In Touch With Your Clients", // Énfasis en "Your Business"
+    description: "Here's where your customers can easily reach you. Whether they have questions, need more information, or want to discuss a project, this is their direct line to your team.", // Descripción re-enfocada
     name: "Your Name", // Campo para que el cliente imagine el nombre de SU cliente
     email: "Your Email Address", // Campo para el email de SU cliente
     subject: "Subject of Your Inquiry", // Más genérico para el asunto de SU cliente
@@ -33,8 +33,8 @@ const Contact = ({ language }) => {
   },
   es: {
     title: "Contacta a TU MARCA", // Cambio a genérico para el título principal
-    subtitle: "Ponte en Contacto con Tu Negocio", // Énfasis en "Tu Negocio"
-    description: "Aquí es donde tus clientes pueden contactarte fácilmente. Ya sea que tengan preguntas, necesiten más información o quieran discutir un proyecto, esta es su línea directa con tu equipo. Simplemente completa el formulario o utiliza los datos de contacto proporcionados.", // Descripción re-enfocada
+    subtitle: "Permiti que se tus clientes se pongan en contacto", // Énfasis en "Tu Negocio"
+    description: "Aquí es donde tus clientes pueden contactarte fácilmente. Ya sea que tengan preguntas, necesiten más información o quieran discutir un proyecto, esta es su línea directa con tu equipo.", // Descripción re-enfocada
     name: "Tu Nombre Completo", // Campo para que el cliente imagine el nombre de SU cliente
     email: "Tu Correo Electrónico", // Campo para el email de SU cliente
     subject: "Asunto de Tu Consulta", // Más genérico para el asunto de SU cliente

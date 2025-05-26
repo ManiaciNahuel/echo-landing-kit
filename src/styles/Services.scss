@@ -123,6 +123,9 @@
 
 @media (max-width: $breakpoint-lg) {
   .services-section {
+    padding-top: 2rem;
+    height: auto;
+    justify-content: start;
     .services-grid {
       grid-template-columns: repeat(2, 1fr);
     }

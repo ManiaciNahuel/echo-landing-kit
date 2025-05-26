@@ -168,6 +168,9 @@
 
 @media (max-width: $breakpoint-md) {
   .contact-section {
+        padding: 2rem 0rem;
+    height: auto;
+    justify-content: start;
     .contact-content {
       flex-direction: column;
       

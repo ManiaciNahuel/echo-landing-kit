@@ -27,7 +27,7 @@ const Services = ({ language }) => {
         title: "[Service Title]", // Genérico
         description: "Present a third essential service, focusing on the unique value it brings to your target audience.", // Genérico
         icon: "🛠️"
-      },
+      }/* ,
       {
         title: "[Service Title]", // Genérico
         description: "Elaborate on a fourth service, emphasizing its impact on improving your clients' operations or results.", // Genérico
@@ -42,7 +42,7 @@ const Services = ({ language }) => {
         title: "[Service Title]", // Genérico
         description: "Explain a sixth service, highlighting any specialized expertise or unique approach you bring.", // Genérico
         icon: "🌟"
-      }
+      } */
     ]
   },
   es: {
@@ -66,7 +66,7 @@ const Services = ({ language }) => {
         title: "[Título de Servicio]", // Genérico
         description: "Presenta un tercer servicio esencial, centrándote en el valor único que aporta a tu público objetivo.", // Genérico
         icon: "🛠️"
-      },
+      }/* ,
       {
         title: "[Título de Servicio]", // Genérico
         description: "Desarrolla un cuarto servicio, enfatizando su impacto en la mejora de las operaciones o resultados de tus clientes.", // Genérico
@@ -81,7 +81,7 @@ const Services = ({ language }) => {
         title: "[Título de Servicio]", // Genérico
         description: "Explica un sexto servicio, destacando cualquier experiencia especializada o enfoque único que aportes.", // Genérico
         icon: "🌟"
-      }
+      } */
     ]
   }
 };
