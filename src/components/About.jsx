@@ -47,7 +47,8 @@ const About = ({ language }) => {
           </div>
           
           <div className="about-image">
-            <div className="image-placeholder"></div>
+            <div className="image-placeholder">
+            </div>
           </div>
         </div>
         
