@@ -98,7 +98,13 @@ const Services = ({ language }) => {
         
         <div className="services-grid">
           {visibleServices.map((service, index) => (
-            <div className="service-card" key={index}>
+            <div
+              className="service-card"
+              key={index}
+              data-aos="zoom-in"
+              data-aos-delay={index * 250}
+              data-aos-duration="700"
+            >
               <div className="service-icon">{service.icon}</div>
               <h4>{service.title}</h4>
               <p>{service.description}</p>

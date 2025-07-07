@@ -19,8 +19,8 @@ const Hero = ({ language }) => {
   const texts = heroTexts[language];
 
   return (
-    <section id="home" className="hero-section">
-      <div className="hero-content">
+    <section id="home" className="hero-section" data-aos="zoom-in-up">
+      <div className="hero-content" >
         <div className="hero-logo">
           <div className="logo-placeholder"></div>
         </div>

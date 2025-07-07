@@ -98,7 +98,6 @@ const Contact = ({ language }) => {
       <div className="contact-container">
         <h2 className="section-title">{texts.title}</h2>
         <h3>{texts.subtitle}</h3>
-        <p className="contact-description">{texts.description}</p>
         
         <div className="contact-content">
           <div className="contact-form-container">
@@ -154,7 +153,7 @@ const Contact = ({ language }) => {
                 ></textarea>
                 {formErrors.message && <span className="error-message">{formErrors.message}</span>}
               </div>
-              
+              <div></div>
               <button type="submit" className="submit-button">{texts.submit}</button>
               
               {submitStatus === 'success' && (

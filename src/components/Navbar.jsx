@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Sun, Moon, Globe } from 'lucide-react';
 import '../styles/Navbar.scss';
@@ -31,7 +30,9 @@ const Navbar = ({ toggleTheme, isDarkMode, language, setLanguage }) => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      const yOffset = -80; // Ajusta este valor según la altura de tu navbar
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
     }
     setIsMenuOpen(false);
   };
